@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tanvir Islam - Portfolio</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Icons & Animations -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+        :root {
+            --primary: #0062cc;
+            --secondary: #f8f9fa;
+            --accent: #e83e8c;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--secondary);
+            scroll-behavior: smooth;
+        }
+
+        .navbar-light {
+            background-color: var(--primary);
+        }
+
+        .navbar-light .navbar-brand,
+        .navbar-light .nav-link {
+            color: #fff;
+        }
+
+        .nav-link:hover {
+            color: var(--accent);
+        }
+
+        .hero {
+            background: url(pic/wallpaperflare.com_wallpaper\(5\).jpg) center/cover no-repeat;
+            height: 100vh;
+            position: relative;
+            color: #fff;
+        }
+
+        .lead {
+            color: black;
+            font-weight: bold;
+            font-style: italic;
+            margin-top: 2em;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background: var(--accent);
+            display: block;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .card-custom {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card-custom:hover {
+            transform: translateY(-10px);
+        }
+
+        footer {
+            background: #343a40;
+            color: #ced4da;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" tabindex="0">
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#hero">Tanvir Islam</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#academic">Academic</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero d-flex align-items-center">
+        <div class="container hero-content" data-aos="zoom-in" data-aos-duration="1000">
+            <h1 class="display-4 fw-bold">Hello, I'm Tanvir Islam</h1>
+            <p class="lead">Competitive Programmer • ML & AI Enthusiast • Traveler</p>
+            <a href="#contact" class="btn btn-lg" style="background:var(--accent);color:#fff;">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Academic Section -->
+    <section id="academic" class="section bg-white">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title">Academic Background</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card card-custom p-4 text-center">
+                        <i class="bi-mortarboard-fill fs-1 text-primary"></i>
+                        <h5 class="mt-3">Comilla University</h5>
+                        <p>B.Sc. in Computer Science &amp; Engineering<br>CGPA: 3.55</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card card-custom p-4 text-center">
+                        <i class="bi-award-fill fs-1 text-primary"></i>
+                        <h5 class="mt-3">HSC &amp; SSC</h5>
+                        <p>HSC GPA: 5.00<br>SSC GPA: 5.00</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card card-custom p-4 text-center">
+                        <i class="bi-book-fill fs-1 text-primary"></i>
+                        <h5 class="mt-3">Fields of Interest</h5>
+                        <p>AI, Machine Learning, Computer Vision</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="section-title">Research Focus</h2>
+            <p class="text-center">Developing real-time face recognition systems with OpenCV and CNNs, optimizing data
+                preprocessing pipelines for high accuracy and low latency.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-white">
+        <div class="container" data-aos="fade-up" data-aos-delay="200">
+            <h2 class="section-title">Projects</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card card-custom p-4">
+                        <h5>Home Automation System</h5>
+                        <p>IoT-based control with Android app integration.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card card-custom p-4">
+                        <h5>Weather Report Website</h5>
+                        <p>Dynamic weather data fetching and display using APIs.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card card-custom p-4">
+                        <h5>Tic Tac Toe Game</h5>
+                        <p>Interactive web game built with JavaScript.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card card-custom p-4">
+                        <h5>Blood Donation DB System</h5>
+                        <p>MongoDB-based donor management platform.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card card-custom p-4">
+                        <h5>Live Wallpaper Site</h5>
+                        <p>HTML/CSS/JS site for dynamic desktop backgrounds.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container" data-aos="fade-up" data-aos-delay="300">
+            <h2 class="section-title">About Me</h2>
+            <p>I'm Tanvir Islam, a competitive programmer and AI researcher. I enjoy photography, playing chess, and
+                exploring new destinations.</p>
+            <p><strong>Skills:</strong> C++, Java, Python, HTML/CSS/JS, SQL, MongoDB, Machine Learning, Android Studio
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-white">
+        <div class="container text-center" data-aos="fade-up" data-aos-delay="400">
+            <h2 class="section-title text-dark">Get in Touch</h2>
+            <p>Feel free to drop a message or connect on GitHub and Facebook.</p>
+            <a href="mailto:islamtanvir116@gmail.com" class="btn btn-outline-primary m-2"><i
+                    class="bi-envelope-fill"></i> Email Me</a>
+            <a href="https://github.com/Abnoxious-rafi" target="_blank" class="btn btn-outline-secondary m-2"><i
+                    class="bi-github"></i> GitHub</a>
+            <a href="https://www.facebook.com/profile.php?id=100011202647882" target="_blank"
+                class="btn btn-outline-info m-2"><i class="bi-facebook"></i> Facebook</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2025 Tanvir Islam. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, once: true });</script>
+</body>
+
+</html>
